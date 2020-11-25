@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="/tools/style.css">-->
+    <script src="tools/script.js"></script>
+    <title>GPA Calculator</title>
+</head>
+
+<body>
+    <header><a href="/index.html">Welcome To The Tools</a></header>
+
+    <div class="age-contain">
+        <div class="content">
+            <h1>GPA Calculator</h1>
+            <div class="main">
+                <label style="width: 100%">Enter GPA</label>
+                <input style="width: 100%" type="number" placeholder="5.00" id="gpa_grade" onfocus="this.value=''">
+                <label style="width: 100%">Output</label>
+                <div id="grade_show" style="height:200px"></div>
+
+                <button class="btn" onclick="show_grade()">Calculate GPA</button>
+            </div>
+        </div>
+    </div>
+    <footer>&copy; Shaikat Chandra Paul</footer>
+</body></html>
