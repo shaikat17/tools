@@ -1,8 +1,12 @@
-*{
+* {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-header, footer{
+header,
+footer {
     background-color: #33b5e5;
     padding: 15px;
     color: #fff;
@@ -10,42 +14,49 @@ header, footer{
     text-align: center;
 }
 
-header a{
+header a {
     text-decoration: none;
 }
-header a:active{
+
+header a:active {
     color: #fff;
 }
-header a:hover{
+
+header a:hover {
     color: #fff;
     background: #000;
 }
-header a:visited{
+
+header a:visited {
     color: #fff;
 }
-footer{
+
+footer {
     position: relative;
     bottom: 0;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
     align-items: stretch;
     margin: 40px 10px;
 }
 
-.container .content-box{
+.container .content-box {
     text-align: center;
     background-color: #fff;
+    -webkit-box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3);
     box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     padding: 10px;
     border-radius: 30px;
 }
 
-.container .content-box h1{
+.container .content-box h1 {
     background-color: #0984e3;
     width: 80%;
     display: inline-block;
@@ -53,25 +64,26 @@ footer{
     border-radius: 20px;
     color: #fff;
     cursor: pointer;
+    -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3)
 }
 
-.container .content-box .text{
+.container .content-box .text {
     text-align: left;
 }
 
-ul{
+ul {
     list-style-type: none;
     line-height: 2.5;
 }
 
-ul li a{
+ul li a {
     text-decoration: none;
     font-size: 1.3rem;
     vertical-align: middle;
 }
 
-.icon{
+.icon {
     font-size: 1.2rem;
     vertical-align: middle;
     margin-right: 10px;
@@ -83,45 +95,50 @@ ul li a{
 
 ul li:hover {
     background-color: #0099cc;
-  color: #ffffff;
+    color: #ffffff;
 }
 
-ul li:hover a{
-  color: #ffffff;
+ul li:hover a {
+    color: #ffffff;
 }
 
-ul li:hover .icon{
-  background-color: #fff;
+ul li:hover .icon {
+    background-color: #fff;
     color: #000;
 }
 
-a:visited{
+a:visited {
     color: red;
 }
-    
-    
-.age-contain{
+
+
+.age-contain {
     display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
-.content{
+
+.content {
     background-color: #38ADA9;
     width: 590px;
     border-radius: 10px;
     overflow: hidden;
     padding: 0px 55px 33px 55px;
+    -webkit-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
     margin: 30px 0;
 
 }
 
-.content h1{
+.content h1 {
     display: block;
     font-family: Poppins-Bold;
     font-size: 50px;
@@ -133,12 +150,12 @@ a:visited{
     margin: 0 0 40px 0;
 }
 
-.main{
+.main {
     width: 100%;
     background: none;
 }
 
-.main label{
+.main label {
     display: block;
     padding: 5px;
     font-weight: bold;
@@ -150,7 +167,22 @@ a:visited{
     margin: 10px 0;
 }
 
-input[type=number], textarea{
+#grade_show{
+    border: 1px solid #fff;
+    font-weight: bold;
+    width: 100%;
+    color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 3;
+}
+
+input[type=number],
+textarea {
     background: none;
     color: #fff;
     width: 40%;
@@ -161,7 +193,7 @@ input[type=number], textarea{
     font-size: 1.5rem;
 }
 
-textarea{
+textarea {
     border: 1px solid #fff;
     font-weight: bold;
     line-height: 1.8rem;
@@ -169,11 +201,11 @@ textarea{
 }
 
 input[type=number]:focus {
-  background-color: lightblue;
+    background-color: lightblue;
     color: #000;
 }
 
-.btn{
+.btn {
     display: block;
     background: #fff;
     border-style: none;
@@ -182,37 +214,61 @@ input[type=number]:focus {
     margin: auto;
     margin-top: 30px;
     font-size: 1.5rem;
+    cursor: -webkit-grab;
     cursor: grab;
     font-weight: bold;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #1e272e;
+    color: #fff;
+}
+
+::-webkit-input-placeholder {
+    color: #000;
+    opacity: 0.4;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    color: #000;
+    opacity: 0.4;
+    /* Firefox */
 }
 
 ::placeholder {
-  color: #000;
-  opacity: 0.4; /* Firefox */
+    color: #000;
+    opacity: 0.4;
+    /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
- color: #000;
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #000;
     opacity: 0.4;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
- color: #000;
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #000;
 }
 
-@media (max-width: 530px){
-    .main label{
-    width: 70px;
-    font-size: 1rem;
-   
-}
-    
-    .btn{
-    font-size: 1rem;
-}
-    .content h1{
-    font-size: 30px;
-    
-}
-    
+@media (max-width: 530px) {
+    .main label {
+        width: 70px;
+        font-size: 1rem;
+
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    .content h1 {
+        font-size: 30px;
+
+    }
+
 }
